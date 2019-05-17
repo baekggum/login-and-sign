@@ -1,0 +1,12 @@
+<h1> signup! </h1>
+<form method = "POST" action = "{%url 'signup'%}">
+    {% csrf_token %}
+    Username:
+    <br>
+    <input name = "Username" type = "text" value = ""><br>
+    Password: <br>
+    <input name = "Password1" type = "password" value = ""><br>
+    Password Confirm: <br>
+    <input name = "Password2" type = "password" value = ""><br>
+    <input type = "submit" value="signup!">
+</form>
